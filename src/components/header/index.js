@@ -2,6 +2,7 @@ import Logo  from '../logo/index.js';
 import NavBar from '../navbar/index.js';
 import Ico from '../botoes/index.js';
 import styled from 'styled-components'
+import { Link } from 'react-router-dom';
 
 const HeaderContainer = styled.header`
     background: #fff;
@@ -12,7 +13,9 @@ const HeaderContainer = styled.header`
 function Header(){
     return(
         <HeaderContainer>
-            <Logo />
+            <Link to="/">
+                <Logo />
+            </Link>
             <NavBar />
             <Ico />
         </HeaderContainer>

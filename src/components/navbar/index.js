@@ -1,29 +1,31 @@
 import styled from 'styled-components';
-const textOptions = ['Categorias', ' Favoritos', 'Minha estante'];
+import { Link } from 'react-router-dom';
 
 const OpcoesContainer = styled.ul`
-    display: flex;
+display: flex;
 `;
- const  OptionButton = styled.li`
-    min-width: 120px;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    padding: 0 5px;
-    cursor: pointer;
-    display: flex;
+const OptionButton = styled.li`
+min-width: 120px;
+font-size: 20px;
+justify-content: center;
+align-items: center;
+text-align: center;
+height: 100%;
+padding: 0 5px;
+cursor: pointer;
+display: flex;
 `;
 
-function opcoesheader(){
-    return(
+const textOptions = ['Categorias', 'Favoritos', 'Estante'];
+
+function opcoesheader() {
+    return (
         <OpcoesContainer>
-            {textOptions.map( (texto) =>(
-            <OptionButton><p>{texto}</p></OptionButton>
-        ))}
-      </OpcoesContainer>
+            {textOptions.map((texto) => (
+                <Link to={`/${texto.toLowerCase()}`}><OptionButton><p>{texto}</p></OptionButton></Link>
+            ))}
+        </OpcoesContainer>
     )
 }
 
- export default opcoesheader;
+export default opcoesheader;
