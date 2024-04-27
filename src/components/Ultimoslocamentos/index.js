@@ -35,9 +35,7 @@ function UltimosLancamentos() {
             cor='#EB9B00' tamanhoFonte='36px' alinhamento='center'>
             Últimos Lançamentos</Titulo>
             <NewLivrosContainer>
-                {livros.map( livro => 
-                    <img src={livro.src}/>
-                )}
+                {livros.map( livro => <img src={livro.src}/>)}
             </NewLivrosContainer>
             <CardRecomenda
                 titulo={"Talvez se interesse por..."}
