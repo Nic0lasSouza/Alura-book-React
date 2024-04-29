@@ -30,16 +30,22 @@ const  ResultadoContainer = styled.div `
     align-items: center;
     margin-bottom: 20px;
     cursor: pointer;
+    background-image: linear-gradient(90deg, #0A67F7 35%, #450AF7 165%);
+    border-radius: 50px;
+    width: 20em;
+    margin: 0 auto;
 
     p{
-        width:200px
+        width:100px
+        justify-content: left;
+        align-items: center;
+        text-align:center;
     }
     img{
-        width: 100px
+        width: 150px
     }
 
     &:hover{
-       border: 1px solid white;
        transform: scale(1.1);
        transition: transform 0.5s;
 `;
