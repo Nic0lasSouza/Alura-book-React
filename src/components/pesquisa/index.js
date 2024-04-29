@@ -1,7 +1,9 @@
 import Input from "../input";
 import styled from "styled-components";
+import LivroImg from "../../img/livro.png";
 import { useEffect, useState } from "react";
 import { getLivros } from "../../services/livros";
+import { postFavoritos } from "../../services/favoritos";
 
 
 const PesquisaContainer= styled.section`
@@ -31,7 +33,7 @@ const  ResultadoContainer = styled.div `
     margin-bottom: 20px;
     cursor: pointer;
     background-image: linear-gradient(90deg, #0A67F7 35%, #450AF7 165%);
-    border-radius: 50px;
+    border-radius: 20px;
     width: 20em;
     margin: 0 auto;
 
@@ -42,12 +44,10 @@ const  ResultadoContainer = styled.div `
         text-align:center;
     }
     img{
-        width: 150px
+        width: 120px;
+        border-radius: 40px;
     }
 
-    &:hover{
-       transform: scale(1.1);
-       transition: transform 0.5s;
 `;
 function Pesquisa(){
     const [livrosPesquisados, setLivrosPesquisados] = useState([]);
@@ -60,6 +60,10 @@ function Pesquisa(){
     async function fetchLivros(){
         const livrosApi = await getLivros();
         setlivros(livrosApi);
+    }
+    async function insertFavorito(id){
+        await postFavoritos(id);
+        alert(`Livro de id:${id} adicionado aos favoritos!`);
     }
     return(
         <PesquisaContainer>
@@ -74,7 +78,7 @@ function Pesquisa(){
                 }}
             />
             {livrosPesquisados.map(livro => (
-                <ResultadoContainer>
+                <ResultadoContainer onClick={() => insertFavorito(livro.id)}>
                     <img src={livro.src}></img>
                     <p>{livro.nome}</p>
                 </ResultadoContainer>
