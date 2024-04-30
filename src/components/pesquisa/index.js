@@ -1,6 +1,5 @@
 import Input from "../input";
 import styled from "styled-components";
-import LivroImg from "../../img/livro.png";
 import { useEffect, useState } from "react";
 import { getLivros } from "../../services/livros";
 import { postFavoritos } from "../../services/favoritos";
@@ -11,7 +10,7 @@ const PesquisaContainer= styled.section`
     color: #fff;
     text-align: center;
     padding: 85px 0;
-    height: 500px;
+    height: auto;
     width: 100%;
     padding-bottom: 10%;
 `;
@@ -36,6 +35,9 @@ const  ResultadoContainer = styled.div `
     border-radius: 20px;
     width: 20em;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
+
 
     p{
         width:100px
@@ -49,6 +51,14 @@ const  ResultadoContainer = styled.div `
     }
 
 `;
+const ResultPesquisaDiv = styled.div`
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+`;
+const BtnFavorito =styled.button``;
 function Pesquisa(){
     const [livrosPesquisados, setLivrosPesquisados] = useState([]);
     const [livros, setlivros] = useState([])
@@ -63,7 +73,7 @@ function Pesquisa(){
     }
     async function insertFavorito(id){
         await postFavoritos(id);
-        alert(`Livro de id:${id} adicionado aos favoritos!`);
+        // alert(`Livro de id:${id} adicionado aos favoritos!`);
     }
     return(
         <PesquisaContainer>
@@ -77,12 +87,15 @@ function Pesquisa(){
                     setLivrosPesquisados(resultadoPesquisa)
                 }}
             />
-            {livrosPesquisados.map(livro => (
-                <ResultadoContainer onClick={() => insertFavorito(livro.id)}>
-                    <img src={livro.src}></img>
-                    <p>{livro.nome}</p>
-                </ResultadoContainer>
-            ))}
+            <ResultPesquisaDiv>
+                {livrosPesquisados.map(livro => (
+                    <ResultadoContainer >
+                        <img src={livro.imagem}></img>
+                        <p>{livro.nome}</p>
+                        <BtnFavorito onClick={() => insertFavorito(livro.id)}>Favoritos</BtnFavorito>
+                    </ResultadoContainer>
+                ))}
+            </ResultPesquisaDiv>
         </PesquisaContainer>
     );
 };

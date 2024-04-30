@@ -9,19 +9,25 @@ const  Container = styled.section`
     padding-bottom = 20px;
     display: flex;
     flex-direction: column;
+
 `;
 
 
 const NewLivrosContainer = styled.div`
-    margin-top = 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     width:100%;
     justify-content: center;
     cursor: pointer;
     background: #808080;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-gap: 10px;
 
     img{
-        border-radius:40px;
+        border-radius:10px;
+        width:150px;
     }
     img:hover{
         transform: scale(1.1);
