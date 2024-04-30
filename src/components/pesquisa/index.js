@@ -46,19 +46,40 @@ const  ResultadoContainer = styled.div `
         text-align:center;
     }
     img{
-        width: 120px;
-        border-radius: 40px;
+        width: 100px;
+        border-radius: 30px;
     }
 
 `;
-const ResultPesquisaDiv = styled.div`
+export const ResultPesquisaDiv = styled.div`
     display: grid;
-    grid-template-columns: 250px 250px 250px;
+    grid-template-columns: 150px 150px 150px;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     align-items: center;
 `;
-const BtnFavorito =styled.button``;
+export const BtnFavorito =styled.button`
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    border-radius:10px;
+    padding-left:16px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:#ffffff;
+    background-color:#16ab54;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    display:inline-block;
+    text-decoration: none;
+    transition: .4s;
+
+    &:hover{
+        color:#ffffff;
+        background-color:#11f79f;
+    }
+`;
 function Pesquisa(){
     const [livrosPesquisados, setLivrosPesquisados] = useState([]);
     const [livros, setlivros] = useState([])
@@ -90,7 +111,7 @@ function Pesquisa(){
             <ResultPesquisaDiv>
                 {livrosPesquisados.map(livro => (
                     <ResultadoContainer >
-                        <img src={livro.imagem}></img>
+                        <img src={livro.imagem} alt="Imagem do Livro"/>
                         <p>{livro.nome}</p>
                         <BtnFavorito onClick={() => insertFavorito(livro.id)}>Favoritos</BtnFavorito>
                     </ResultadoContainer>

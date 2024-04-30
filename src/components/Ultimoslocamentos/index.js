@@ -34,6 +34,9 @@ const NewLivrosContainer = styled.div`
         transition: transform 0.5s;
     }
 `;
+
+const  LivrosM = styled.div`
+`;
 function UltimosLancamentos() {
     return (
         <Container>
@@ -41,7 +44,12 @@ function UltimosLancamentos() {
             cor='#EB9B00' tamanhoFonte='36px' alinhamento='center'>
             Últimos Lançamentos</Titulo>
             <NewLivrosContainer>
-                {livros.map( livro => <img src={livro.src}/>)}
+                {livros.map( livro =>
+                <LivrosM>
+                    <img src={livro.src} alt=""/>
+                    <p>{livro.nome}</p>
+                </LivrosM>
+                )}
             </NewLivrosContainer>
             <CardRecomenda
                 titulo={"Talvez se interesse por..."}

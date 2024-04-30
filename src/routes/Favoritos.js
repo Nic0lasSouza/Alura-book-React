@@ -39,9 +39,10 @@ const Resultado = styled.div`
 `;
 const ResultadoContainer = styled.div`
   display: grid;
-  grid-template-columns: 250px 250px 250px;
-  justify-content: center;
-  align-items: center;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: center;
 `;
 
 function Favoritos() {
@@ -65,7 +66,7 @@ function Favoritos() {
       <ResultadoContainer>
         {favoritos.map(favorito => (
           <Resultado>
-            <img src={favorito.imagem}/>
+            <img src={favorito.imagem} alt=''/>
             <p>{favorito.nome}</p>
             <button onClick={() => deletarFavoritos(favorito.id)}> X </button>
           </Resultado>
