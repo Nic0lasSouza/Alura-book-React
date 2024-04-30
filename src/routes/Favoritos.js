@@ -25,6 +25,7 @@ const Resultado = styled.div`
   padding: 0 100px;
   background-image: linear-gradient(90deg, #0A67F7 35%, #450AF7 165%);
   border-radius: 20px;
+  width: 75px;
   p{
     width:200px;
     color: #FFF;
@@ -38,11 +39,12 @@ const Resultado = styled.div`
   }
 `;
 const ResultadoContainer = styled.div`
-  display: grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     align-items: center;
+  
 `;
 
 function Favoritos() {

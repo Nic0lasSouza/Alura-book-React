@@ -3,6 +3,8 @@ import { todosLivros } from "../components/botoesCat/livros.js";
 import { postFavoritos } from "../../src/services/favoritos";
 import { BtnFavorito } from "../components/pesquisa/index.js";
 import BotoesCategoria from './../components/botoesCat/index.js';
+import CarrinhoCompras from "../components/carrinho/index.js";
+
 
 const Container = styled.section`
     background-image: linear-gradient(90deg, #002F52 35%, #326589 165%);
@@ -13,7 +15,8 @@ const Container = styled.section`
     padding: 85px 0;
     height: auto;
     width: 100%;
-    padding-bottom: 10%;`;
+    padding-bottom: 10%;
+`;
 
 // const TodosLivros = styled.div``;
 const Resultado = styled.div`
@@ -50,7 +53,11 @@ const ImgNome =styled.div`
   }
 `;
 
-const BtnCarrinho = styled.button``;
+const BotoesAcoes =styled.div`
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+`;
 const Descricao = styled.div``;
 function Categoria(){
   async function insertFavorito(id){
@@ -71,8 +78,10 @@ function Categoria(){
               <p>Autor: {livro.autor}</p>
               <p>Categoria: {livro.categoria}</p>
             </Descricao>
-            <BtnFavorito onClick={() => insertFavorito(livro.id)}>Favoritos</BtnFavorito>
-            <BtnCarrinho></BtnCarrinho>
+            <BotoesAcoes>
+              <BtnFavorito onClick={() => insertFavorito(livro.id)}>Favoritos</BtnFavorito>
+              <CarrinhoCompras/>
+            </BotoesAcoes>
           </Resultado>
         )}
     </Container>
