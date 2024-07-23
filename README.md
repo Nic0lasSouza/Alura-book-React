@@ -1,7 +1,13 @@
 # Alura Book - React
+![React](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=plastic)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=white&style=plastic)
+![NodeJS](https://img.shields.io/badge/NodeJS-339933?logo=node.js&logoColor=white&style=plastic)
+![NPM](https://img.shields.io/badge/npm-red?logo=npm&logoColor=white&style=plastic)
+![Axios](https://img.shields.io/npm/v/axios?logo=axios&logoColor=white&color=red&style=plastic)
+![styled-components](https://img.shields.io/badge/styled--components-blue?logo=styled-components&logoColor=white&style=plastic)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![React](https://img.shields.io/badge/React-v17.0.2-61DAFB)
+
+
 Este é um projeto de aplicação web desenvolvido utilizando React para o curso da Alura.
 
 ## Índice
@@ -11,7 +17,6 @@ Este é um projeto de aplicação web desenvolvido utilizando React para o curso
 - [Como usar](#como-usar)
 - [Tecnologias](#tecnologias)
 - [Contribuição](#contribuição)
-- [Licença](#licença)
 - [Contato](#contato)
 
 ## Sobre
@@ -63,12 +68,8 @@ Contribuições são bem-vindas! Se você tem alguma ideia para melhorar o proje
 4. Faça push para a branch (`git push origin feature/nova-feature`)
 5. Abra um Pull Request
 
-## Licença
-
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
 ## Contato
 
-Nic0las Souza - [@seuusuario](https://twitter.com/seuusuario) - seuemail@exemplo.com
+Nic0las Souza - nicolasdsmdsouza2004@gmail.com
 
 Link do Projeto: [https://github.com/Nic0lasSouza/Alura-book-React](https://github.com/Nic0lasSouza/Alura-book-React)
