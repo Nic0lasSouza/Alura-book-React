@@ -1,7 +1,7 @@
 # Alura Book - React
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-
+![React](https://img.shields.io/badge/React-v17.0.2-61DAFB)
 Este é um projeto de aplicação web desenvolvido utilizando React para o curso da Alura.
 
 ## Índice
