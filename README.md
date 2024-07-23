@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Alura Book - React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-## Available Scripts
+Este é um projeto de aplicação web desenvolvido utilizando React para o curso da Alura.
 
-In the project directory, you can run:
+## Índice
 
-### `npm start`
+- [Sobre](#sobre)
+- [Instalação](#instalação)
+- [Como usar](#como-usar)
+- [Tecnologias](#tecnologias)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
+- [Contato](#contato)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Sobre
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O **Alura Book** é uma aplicação que simula uma loja online de livros, onde usuários podem visualizar uma lista de livros disponíveis e obter mais informações sobre cada um.
 
-### `npm test`
+## Instalação
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para instalar e executar o projeto localmente, siga os seguintes passos:
 
-### `npm run build`
+1. Clone o repositório:
+    ```sh
+    git clone https://github.com/Nic0lasSouza/Alura-book-React.git
+    ```
+2. Navegue até o diretório do projeto:
+    ```sh
+    cd Alura-book-React
+    ```
+3. Instale as dependências:
+    ```sh
+    npm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Como usar
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Após a instalação das dependências, inicie o servidor de desenvolvimento:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm start
+```
 
-### `npm run eject`
+## Tecnologias
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+As seguintes tecnologias foram utilizadas no desenvolvimento deste projeto:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [React](https://reactjs.org/)
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+- [Axios](https://axios-http.com/)
+- [Styled-components](https://styled-components.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contribuição
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Contribuições são bem-vindas! Se você tem alguma ideia para melhorar o projeto, por favor, siga os passos abaixo:
 
-## Learn More
+1. Faça um fork do projeto
+2. Crie uma branch para a sua feature (`git checkout -b feature/nova-feature`)
+3. Comite suas mudanças (`git commit -m 'Adiciona nova feature'`)
+4. Faça push para a branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Licença
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-### Code Splitting
+## Contato
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Nic0las Souza - [@seuusuario](https://twitter.com/seuusuario) - seuemail@exemplo.com
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Link do Projeto: [https://github.com/Nic0lasSouza/Alura-book-React](https://github.com/Nic0lasSouza/Alura-book-React)
